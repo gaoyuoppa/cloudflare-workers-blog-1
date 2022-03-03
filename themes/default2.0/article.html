@@ -123,8 +123,8 @@
 													<span class="fn">
 														<a href="#" title="由admin发布" rel="author">admin</a></span>
 												</span>
-												<span class="meta-sep">|</span>
-												<span class="date updated">{{ &articleSingle.createDate10 }}</span></div>
+												
+												</div>
 											<div class="adt-comment">
 												<span id="{{ &articleSingle.url }}" class="leancloud_visitors">
 													<em class="post-meta-item-text">{{ &OPT.otherCodeA }}</em>
@@ -145,12 +145,7 @@
 												<a href="/category/{{&.}}" rel="category tag">{{&.}}</a>
 											{{ /articleSingle.category }}
 										</span>	
-										<span>标签：
-											{{ #articleSingle.tags }}
-												<a href="/tags/{{&.}}" rel="tag">{{&.}} </a> 
-											{{ /articleSingle.tags }}
-
-										</span>
+						
 									</footer>
 									<!-- .entry-meta -->
 								</article>
@@ -178,14 +173,7 @@
 						</div>
 						<!-- #primary -->
 						<div id="secondary" class="widget-area" role="complementary">
-							<aside id="recent-posts-2" class="widget widget_recent_entries">
-								<p class="widget-title">近期文章</p>
-								<ul>
-									{{ #widgetRecentlyList }}
-									<li><a href="{{ &url }}">{{ &title }}</a></li>
-									{{ /widgetRecentlyList }}
-								</ul>
-							</aside>
+	
 							<aside id="categories-4" class="widget widget_categories">
 								<p class="widget-title">分类目录</p>
 								<ul>
@@ -196,7 +184,7 @@
 							</aside>
 
 							<aside id="meta-2" class="widget widget_meta">
-								<p class="widget-title">链接</p>
+								
 								<ul>
 									<li><a href="/admin/">管理站点</a></li>
 									{{ #widgetLinkList }}
